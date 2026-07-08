@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Events | EventSphere</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>EventSphere</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+           <li><a href="register.html">Register</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+         
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Upcoming Events</h1>
+
+        <p>
+          Discover exciting workshops, hackathons, cultural festivals, music
+          concerts, and business conferences.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2 class="title">Find Your Event</h2>
+
+      <div
+        style="
+          max-width: 700px;
+          margin: auto;
+          display: flex;
+          gap: 15px;
+          flex-wrap: wrap;
+          justify-content: center;
+        "
+      >
+        <input
+          type="text"
+          id="searchEvent"
+          placeholder="Search events..."
+          style="
+            width: 420px;
+            padding: 15px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            outline: none;
+          "
+        />
+
+        <button class="btn" onclick="searchEvents()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          Search
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">Featured Event</h2>
+
+      <div class="card" style="max-width: 1100px; margin: auto">
+        <img src="./fe.png" alt="Featured Event" />
+
+        <div style="padding: 30px">
+          <h2>AI & Innovation Summit 2026</h2>
+
+          <p>
+            Join industry experts, researchers, startups and students to explore
+            Artificial Intelligence, Machine Learning, Cyber Security, Cloud
+            Computing and the Future of Technology.
+          </p>
+
+          <p><strong>📅 Date:</strong> 20 December 2026</p>
+
+          <p><strong>🕒 Time:</strong> 9:00 AM – 5:00 PM</p>
+
+          <p><strong>📍 Venue:</strong> Chennai Trade Centre</p>
+
+          <p><strong>💰 Fee:</strong> ₹499</p>
+
+          <p><strong>👥 Seats Available:</strong> 250</p>
+
+          <a href="register.html" class="btn"> Register Now </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="events">
+      <h2 class="title">Popular Events</h2>
+
+      <div class="event-container">
+        <div class="card">
+          <img src="./hack.png" />
+
+          <h3>Hackathon 2026</h3>
+
+          <p>24-hour coding competition with exciting prizes.</p>
+
+          <p><strong>Date:</strong> 15 Dec 2026</p>
+
+          <p><strong>Venue:</strong> Madurai</p>
+
+          <p><strong>Fee:</strong> ₹250</p>
+
+          <a href="register.html">Register</a>
+        </div>
+
+        <div class="card">
+          <img src="./music.jpg" />
+
+          <h3>Music Concert</h3>
+
+          <p>Experience an unforgettable live music night.</p>
+
+          <p><strong>Date:</strong> 18 Dec 2026</p>
+
+          <p><strong>Venue:</strong> Chennai</p>
+
+          <p><strong>Fee:</strong> ₹799</p>
+
+          <a href="register.html">Register</a>
+        </div>
+
+        <div class="card">
+          <img src="./expo.webp" />
+
+          <h3>Startup Expo</h3>
+
+          <p>Meet entrepreneurs, investors and innovators.</p>
+
+          <p><strong>Date:</strong> 22 Dec 2026</p>
+
+          <p><strong>Venue:</strong> Coimbatore</p>
+
+          <p><strong>Fee:</strong> Free</p>
+
+          <a href="register.html">Register</a>
+        </div>
+
+        <div class="card">
+          <img src="./photo.jpg" />
+
+          <h3>Photography Workshop</h3>
+
+          <p>Learn professional photography techniques.</p>
+
+          <p><strong>Date:</strong> 24 Dec 2026</p>
+
+          <p><strong>Venue:</strong> Trichy</p>
+
+          <p><strong>Fee:</strong> ₹399</p>
+
+          <a href="register.html">Register</a>
+        </div>
+
+        <div class="card">
+          <img src="./conf.jpg" />
+
+          <h3>Business Conference</h3>
+
+          <p>Networking sessions with business leaders.</p>
+
+          <p><strong>Date:</strong> 26 Dec 2026</p>
+
+          <p><strong>Venue:</strong> Bengaluru</p>
+
+          <p><strong>Fee:</strong> ₹999</p>
+
+          <a href="register.html">Register</a>
+        </div>
+
+        <div class="card">
+          <img src="./culture.jpg" />
+
+          <h3>Cultural Fest</h3>
+
+          <p>Dance, music, art and exciting competitions.</p>
+
+          <p><strong>Date:</strong> 30 Dec 2026</p>
+
+          <p><strong>Venue:</strong> Madurai</p>
+
+          <p><strong>Fee:</strong> ₹199</p>
+
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">Event Schedule</h2>
+
+      <div class="event-container">
+        <div class="card">
+          <h3>09:00 AM</h3>
+
+          <p>Registration & Welcome Kit Distribution</p>
+        </div>
+
+        <div class="card">
+          <h3>10:00 AM</h3>
+
+          <p>Opening Ceremony & Keynote Speech</p>
+        </div>
+
+        <div class="card">
+          <h3>11:30 AM</h3>
+
+          <p>Technical Sessions & Workshops</p>
+        </div>
+
+        <div class="card">
+          <h3>01:00 PM</h3>
+
+          <p>Lunch Break</p>
+        </div>
+
+        <div class="card">
+          <h3>02:00 PM</h3>
+
+          <p>Competitions & Networking</p>
+        </div>
+
+        <div class="card">
+          <h3>05:00 PM</h3>
+
+          <p>Prize Distribution & Closing Ceremony</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="title">Frequently Asked Questions</h2>
+
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <h3>How do I register?</h3>
+
+          <p>
+            Go to the Register page, fill in your details, and click the
+            Register button.
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <h3>Can I register for multiple events?</h3>
+
+          <p>
+            Yes. Submit a separate registration for each event you wish to
+            attend.
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <h3>Will I receive a confirmation?</h3>
+
+          <p>
+            Yes. Once EmailJS is configured, you'll receive a confirmation email
+            after successful registration.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <h2>Ready to Join Us?</h2>
+
+      <p>
+        Don't miss out on exciting opportunities to learn, connect, and grow.
+        Register today and be part of our upcoming events.
+      </p>
+
+      <a href="register.html"> Register Now </a>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <h3>EventSphere</h3>
+
+          <p>
+            Making every event memorable through innovation, creativity, and
+            professional event management.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+
+          <a href="index.html">Home</a><br />
+          <a href="about.html">About</a><br />
+          <a href="events.html">Events</a><br />
+          <a href="register.html">Register</a><br />
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+
+          <p>📧 codeloom@gmail.com</p>
+
+          <p>📞 +91 9788849870</p>
+
+          <p>📍 Thirmanglam, Madurai, Tamil Nadu</p>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 EventSphere. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Event Registration | EventSphere</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>EventSphere</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html" class="active">Register</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="register" style="padding-top: 140px">
+      <h2 class="title">Event Registration</h2>
+
+      <div class="register-banner">
+        <img src="./register banner.jpg" alt="Register for EventSphere events" />
+      </div>
+
+      <div class="container">
+        <form id="registerForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <i class="fa-solid fa-user"></i>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email Address" required />
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="college"
+              placeholder="College / Company"
+              required
+            />
+            <i class="fa-solid fa-building"></i>
+          </div>
+
+          <div class="form-group">
+            <select id="event" required>
+              <option value="">Select Event</option>
+
+              <option>Tech Summit 2026</option>
+
+              <option>Music Festival</option>
+
+              <option>Startup Expo</option>
+
+              <option>Workshop</option>
+
+              <option>Hackathon</option>
+            </select>
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              placeholder="Additional Message"
+              rows="5"
+            ></textarea>
+            <i class="fa-solid fa-comment"></i>
+          </div>
+
+          <button type="submit" class="btn">Register Now</button>
+        </form>
+      </div>
+
+      <p class="register-note">
+        By registering, you agree to receive event updates and confirmation
+        details via email.
+      </p>
+    </section>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>© 2026 EventSphere. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
