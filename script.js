@@ -1,3 +1,33 @@
+function searchEvents() {
+  const input = document.getElementById("searchEvent");
+
+  if (!input) return;
+
+  const filter = input.value.trim().toLowerCase();
+
+  const cards = document.querySelectorAll(".events .event-container .card");
+
+  cards.forEach((card) => {
+    const text = card.textContent.toLowerCase();
+
+    if (filter === "" || text.includes(filter)) {
+      card.style.display = "";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+const searchInput = document.getElementById("searchEvent");
+
+if (searchInput) {
+  searchInput.addEventListener("input", searchEvents);
+
+  searchInput.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") searchEvents();
+  });
+}
+
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
